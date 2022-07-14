@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Basic Javascript</h1>
+    <h2>Greetings to the student:</h2>
+    <div id="greeting"></div>
+</body>
+<script>
+    var greetingsDiv = document.getElementById("greeting");
+    const students = ["Boye", "Emma", "Tosin", "Hauwa"];
+
+    for (var iteration = 0; iteration < students.length; iteration++) {
+        var presentGreeting = "Hello" + students[iteration] + "</br>";
+        console.log(presentGreeting);
+        greetingsDiv.innerHTML += presentGreeting;
+    }
+</script>
+
+</html>
